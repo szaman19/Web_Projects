@@ -1,14 +1,23 @@
 (function(){
 var app = angular.module('store',[]);
 var gems = [{
-  name: "Dodecahedron",
+  name: "Python",
+  version: 3.5,
   price: 2.95,
   description: '...',
   canPurchase: true,
   soldOut: true
 },{
-  name: "Pentagonal Gem",
+  name: "Ruby",
+  version:,
   price: 5.95,
+  description: "...",
+  canPurchase: true
+},
+{
+  name: "PHP",
+  version: ,
+  price: 6,
   description: "...",
   canPurchase: true
 }];
