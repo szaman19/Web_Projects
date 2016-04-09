@@ -13,7 +13,9 @@
         "version": "0.10.1",
         "image" :"",
         "website":"http://flask.pocoo.org/",
-        "resources":[]
+        "resources":[
+          "http://flask.pocoo.org/docs/0.10/"
+        ]
       },
       {
         "name":"Django",
@@ -21,7 +23,9 @@
         "version":"1.9.5",
         "image":"",
         "website":"www.djangoproject.com",
-        "resources":[]
+        "resources":[
+          "https://docs.djangoproject.com/en/1.9/"
+        ]
       }
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/260px-Python_logo_and_wordmark.svg.png"
@@ -40,7 +44,9 @@
         "version":"5.0.0",
         "image":"",
         "website":"www.rubyonrails.org/",
-        "resources":[]
+        "resources":[
+          "http://guides.rubyonrails.org/"
+        ]
       }
     ],
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png"
@@ -59,7 +65,9 @@
         "version":"5.2",
         "image":"",
         "website":"www.laravel.com",
-        "resources":[]
+        "resources":[
+          "https://laravel.com/docs/5.2"
+        ]
       },
       {
         "name":"Slim",
@@ -67,7 +75,9 @@
         "version":"3.3",
         "image":"",
         "website":"http://www.slimframework.com/",
-        "resources":[]
+        "resources":[
+          "http://www.slimframework.com/docs/"
+        ]
       }
     ],
     "image": "http://www.webdesign-hints.com/wp-content/uploads/2015/07/2000px-php-logo-svg_.png"

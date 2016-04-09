@@ -14,7 +14,7 @@
   <body ng-controller="StoreController as store">
     <div class="container">
       <div class="jumbotron">
-        <h1>Welcome to the Angular Store!</h1>
+        <h1>Welcome to the AngularJs Store!</h1>
         <p>
           Angular has gotten us covered in front-end department.
           It's time we check out what can power out next great
@@ -24,16 +24,18 @@
         </p>
       </div>
       <div class="row" ng-repeat="product in store.products">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <section ng-controller="TabController as tab">
+            <!-- NAVIGATION TABS  -->
             <ul class="nav nav-tabs">
-              <li ng-class="{ active: tab.isSet($index)}">
+              <li ng-class="{active: tab.isSet($index)}">
                 <a ng-click="tab.setTab($index)" data-toggle="tab">{{product.name}}</a>
               <li>
               <li ng-class="{ active: tab.isSet(product.name+$index)}" ng-repeat="framework in product.frameworks">
                 <a href ng-click="tab.setTab(product.name+$index)">{{framework.name}}</a>
               </li>
             </ul>
+            <!-- TABS TABS TABS TABS PLEASE CLEAN UP! -->
             <div ng-show="tab.isSet($index)">
               <h3>{{product.name}}</h3>
               <hr>
@@ -48,18 +50,33 @@
                 <a ng-href="http://{{product.website}}">{{product.website}}</a>
               </blockquote>
               <br>
-            </div>
+           </div>
+
             <div ng-repeat="framework in product.frameworks" ng-show="tab.isSet(product.name+$index)">
-              <h3>{{framework.name}}</h3>
-              <hr>
-              <blockquote>
-                {{framework.description}}
-                <br>
-                Website:
-                <a ng-href="http://{{framework.website}}">{{framework.website}}</a>
-                <br>
-                Version: {{framework.version}}
-              </blockquote>
+              <div class="col-md-7">
+                <h3>{{framework.name}}</h3>
+                <hr>
+                <blockquote>
+                  {{framework.description}}
+                  <br>
+                  Website:
+                  <a ng-href="http://{{framework.website}}">{{framework.website}}</a>
+                  <br>
+                  Version: {{framework.version}}
+                </blockquote>
+              </div>
+              <div class="col-md-5">
+                <h4>Resources:</h4>
+                <hr />
+                <ul>
+                  <li ng-repeat="resource in framework.resources">
+                    <a href="http://{{resource}}">
+                      {{resource}}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
             </div>
           </section>
         </div>
