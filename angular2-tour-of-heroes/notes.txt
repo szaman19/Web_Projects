@@ -1,0 +1,27 @@
+/*
+
+  Package.json copied from https://angular.io/docs/ts/latest/quickstart.html
+   lists packages the QuickStart app depends on and defines scripts such as
+   the typescript compiler and running the ilte server
+
+*/
+/*
+
+    tsconfig.json specifies the root files and compiler options
+    required to compile the project.
+
+*/
+
+/*
+{
+  "compileOnSave" : true
+
+}
+Requires atom-typescript or VS2015
+*/
+
+/*
+typings.json: d.ts files for for dependencies that TypeScript can readily compile.
+*/
+
+Transpiling in the browser it not a good idea
