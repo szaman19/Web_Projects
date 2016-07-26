@@ -1,0 +1,17 @@
+<div class="section">
+      <app-timer-component [timerState] = "timerObj"></app-timer-component>
+
+    </div>
+  <div class="section">
+      <h1> 6 Minute State Challenge </h1>
+      <input (keyup) = "onKey($event)" [disabled]="timerObj.disable">
+      <h3> {{ message }}</h3>
+      <h2>You have gotten {{counter}} states </h2>
+</div>
+<div class="section">
+      <ol>
+        <li *ngFor="let state of correctStates">
+          {{state}}
+        </li>
+      </ol>
+</div>
